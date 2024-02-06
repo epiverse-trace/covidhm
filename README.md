@@ -1,12 +1,12 @@
-# Using a real-world network to model localised COVID-19 control strategies
+# Modelling transmission and control on real-world networks.
 
+This repository is currently under development. It is a fork of the [covidhm repository](https://github.com/biouea/covidhm), which in turn was adapted from the [ringbp](https://github.com/epiforecasts/ringbp/) package. The aim of this new repository is to allow development for more general use cases beyond COVID, with the original repo remaining as the accompaniment to the initial 2020 published COVID analysis.
 
-This repository contains code for simulating COVID-19 dynamics in a range of scenarios across a real-world social network. The epidemic model is based conceptually on a branching-process model of contact-tracing and COVID-19, which can be accessed [here](https://github.com/cmmid/ringbp).
+These are the two main published applications of this model:
+- Analysis of COVID control measures using UK community network interactions ([Firth et al, Nature Med, 2020](https://www.nature.com/articles/s41591-020-1036-8)).
+- Analysis of COVID control measures using Singapore cruise ship event network data ([Pung et al, Nature Comms, 2022](https://www.nature.com/articles/s41467-022-29522-y)). There is also an [accompanying repository with code for this analysis](https://github.com/rachaelpung/cruise_networks).
 
-
-
-## Abstract
-Case isolation and contact tracing can contribute to the control of COVID-19 outbreaks. However, it remains unclear how real-world social networks could influence the effectiveness and efficiency of such approaches. To address this issue, we simulated control strategies for SARS-CoV-2 transmission in a real-world social network generated from high resolution GPS data that was gathered in the course of a citizen-science experiment3,4. We found that tracing contacts-of-contacts reduced the size of simulated outbreaks more than tracing of only contacts, but this strategy also resulted in almost half of the local population being quarantined at a single point in time. Testing and releasing non-infectious individuals from quarantine led to increases in outbreak size, suggesting that contact tracing and quarantine might be most effective as a ‘local lockdown’ strategy when contact rates are high. Finally, we estimated that combining physical distancing with contact tracing could enable epidemic control while reducing the number of quarantined individuals. Our findings suggest that targeted tracing and quarantine strategies would be most efficient when combined with other control measures such as physical distancing.
+The below are the set-up instructions from the original {covidhm} repo.
 
 ## Usage
 
