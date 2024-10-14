@@ -1,6 +1,8 @@
 # Modelling transmission and control on real-world networks.
 
-This repository is currently under development. It is a fork of the [covidhm repository](https://github.com/biouea/covidhm), which in turn was adapted from the [ringbp](https://github.com/epiforecasts/ringbp/) package. The aim of this new repository is to allow development for more general use cases beyond COVID, with the original repo remaining as the accompaniment to the initial 2020 published COVID analysis.
+This repository is currently under development. It is a fork of the [{covidhm} repository](https://github.com/biouea/covidhm), which in turn was adapted from the [{ringbp}](https://github.com/epiforecasts/ringbp/) package. The aim of this new repository is to allow development for more general use cases beyond COVID, with the original repo remaining as the accompaniment to the initial 2020 published COVID analysis.
+
+Unlike {ringbp}, which simulates using branching processes, the model in this repo allows simulation of outbreaks on empirical networks, and hence accounting for clustering of contacts – although [{simulist}](https://github.com/epiverse-trace/simulist) also includes an option to approximate some clustering effects). This makes it particularly well suited to outbreaks in closed settings and small communities. However, given active development happening on ringbp, which informed this network model, this repository should be considered a placeholder for now.
 
 These are the two main published applications of this model:
 - Analysis of COVID control measures using UK community network interactions ([Firth et al, Nature Med, 2020](https://www.nature.com/articles/s41591-020-1036-8)).
